@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/rectangle3"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle2"
+        android:layout_centerHorizontal="true" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+             android:layout_gravity="center_vertical"
+            android:text="未命名"
+            style="@style/myTextStyle"
+            android:ems="10" >
+        </EditText>
+        <ImageView             
+            android:id="@+id/image01"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center_vertical"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/linlay"
+        android:layout_centerHorizontal="true"
+        android:numColumns="3" >
+    </GridView>
+
+</RelativeLayout>
